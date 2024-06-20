@@ -51,7 +51,7 @@ const Navbar = () => {
                     </ul>
                     <div className="space-x-12 hidden lg:flex items-center">
                         <Link to="/clogin" className="link block text-base cursor-pointer uppercase text-black hover:text-blue-700">Login</Link>
-                        <Link to="/register" className="link block text-base cursor-pointer uppercase text-black hover:text-blue-700">Signup</Link>
+                        <Link to="/login" className="link block text-base cursor-pointer uppercase text-black hover:text-blue-700">Admin</Link>
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="text-black focus:outline-none">
