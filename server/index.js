@@ -9,7 +9,6 @@ import { MongoClient, ServerApiVersion, ObjectId } from 'mongodb';
 import mongoose from 'mongoose';
 import session from 'express-session';
 import path from 'path';
-import authRoutes from '../front/backend/routes/auth.js'; // Ensure this path is correct
 
 
 // Define the Employee model
