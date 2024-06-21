@@ -29,7 +29,7 @@ const Navbar = () => {
     const navItems = [
         { link: "Home", path: "/" },
         { link: "About", path: "/about" },
-        // { link: "Shop", path: "/shop" },
+         { link: "Shop", path: "/shop" },
         { link: "Blog", path: "/blog" },
         { link: "Login", path: "/clogin" },
         { link: "Sign Up", path: "/register" },
