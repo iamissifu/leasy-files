@@ -10,7 +10,7 @@ export default function Shop() {
   const [searchKeyword, setSearchKeyword] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/all-books')
+    fetch('https://leasy-files-server.vercel.app/all-books')
       .then(res => res.json())
       .then(data => setBooks(data))
       .catch(error => console.error('Error fetching books:', error));
@@ -25,7 +25,7 @@ export default function Shop() {
   };
 
   const sendEmail = (filePath, bookTitle) => {
-    fetch('http://localhost:5000/send-email', {
+    fetch('https://leasy-files-server.vercel.app/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

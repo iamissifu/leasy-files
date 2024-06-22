@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       {
         path: "/book/:id",
         element: <SignleBook />,
-          loader: ({ params }) => fetch(`https://vercel.com/iamsibdous-projects/leasy-files-server/9gMw3esNAAyszPRvjp1tYgBFwYvQ/book/${params.id}`)
+        loader: ({ params }) => fetch(`https://leasy-files-server.vercel.app/book/${params.id}`)
       },
       {
         path: "/about",
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
       { path: "/admin/dashboard/upload", element: <UploadBook /> },
       { path: "/admin/dashboard/manage", element: <ManageBooks /> },
       { path: "/admin/dashboard/edit-books/:id", element: <EditBooks />,
-      loader: ({ params }) => fetch(`http://localhost:5000/book/${params.id}`)
+      loader: ({ params }) => fetch(`https://leasy-files-server.vercel.app/book/${params.id}`)
     },
     ],
   },
