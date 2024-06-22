@@ -35,7 +35,7 @@ const Employee = mongoose.model('Employee', EmployeeSchema);
 const __dirname = path.resolve();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000 || 'https://leasy-files-server.vercel.app/';
 
 // Middleware
 app.use(cors());
